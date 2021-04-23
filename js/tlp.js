@@ -17,7 +17,7 @@ function generarPda(){
     let watchmen = 880;
     let libreSigres = "";
     let migra = "";
-    let uf = (loa * beam * dm) / 800
+    let uf = Math.ceil((loa * beam * dm) / 800);
     let plural = "";
     document.getElementById("PDA").style = "background-color: white; box-shadow: 10px 10px 10px rgba(0,0,0,0.3)"
 
@@ -35,8 +35,7 @@ function generarPda(){
     else{
         portDues = 2000 * portStay;
     }
-    
-    
+        
     if(!cabotajeIn.checked){
         libreSigres = `-Free Pratique: usd 490.<br/>
         -Garbage Insp: &nbsp;usd 290.<br/>`;
@@ -54,7 +53,6 @@ function generarPda(){
     
     let tarifa = uf * 14;
     portPilot = ((tarifa + 2600) * 2) + (tarifa * arrDraft) + (tarifa * depDraft);
-
 
     document.getElementById("PDA").innerHTML = `${vesselName.toUpperCase()} – TERMINAL LAS PALMAS – ${portStay} day${plural} along:<br/>
     ----------------------------------------------<br/>

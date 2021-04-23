@@ -13,7 +13,7 @@
     <title>Del Guazu</title>
   </head>
   <body>
-    <div id="muellecont" class="container">
+    <div id="eurotdgcont" class="container">
       <ul><a class="btn btn-primary" id="goback" href="index.html"><i class="material-icons" style="vertical-align:bottom">home</i></a></ul>
       <div id="title" class="container"><h1>Del Guazu</h1></div>
       <div id="form" class="container">
@@ -45,6 +45,11 @@
             <option value=0.15>Entre 9.14m y 9.75m (15%)</option>
             <option value=0.225>Entre 9.75m y 10.36m (22.5%)</option>
             <option value=0.30>Mayor a 10.36m (30%)</option>
+          </select><br/>
+          <label for="vesselType">Tipo de buque:</label><br/>
+          <select id="vesselType" name="vesselType">
+            <option value="bulker">Bulker</option>
+            <option value="tanker">Tanker</option>
           </select><br/><br/>
           <input type="checkbox" id="cabotajeIn" name="cabotajeIn" value="cabotajeIn">
           <label for="cabotajeIn"> Entra en cabotaje</label><br/>

@@ -17,7 +17,7 @@ function generarPda(){
     let watchmen = 880;
     let libreSigres = "";
     let migra = "";
-    let uf = (loa * beam * dm) / 800
+    let uf = Math.ceil((loa * beam * dm) / 800);
     let plural = "";
     let muelle = document.getElementById("muelle").value;
     document.getElementById("PDA").style = "background-color: white; box-shadow: 10px 10px 10px rgba(0,0,0,0.3)"
@@ -26,12 +26,44 @@ function generarPda(){
         plural = "s"
     }
     
-    if(uf < 65){
-        uf = 65;
-    }
-    
     if((nrt * 0.26) < 1625){
         portDues = 1625 * portStay;
+    }
+
+    if(portStay > 5){
+        let aux = 2
+        if(portStay != 6 && portStay != 13 && portStay != 20){
+            portDues = (0.26 * nrt * (portStay - (aux * (Math.floor(portStay / 7))))) + (0.32 * nrt * (aux * (Math.floor(portStay / 7))))
+        }
+        else if(portStay == 6){
+            portDues = (0.26 * nrt * 5) + (0.32 * nrt * 1)
+        }
+        else if(portStay == 13){
+            portDues = (0.26 * nrt * 10) + (0.32 * nrt * 3)
+        }
+        else if(portStay == 20){
+            portDues = (0.26 * nrt * 15) + (0.32 * nrt * 5)
+        }
+    }
+
+    if(portStay > 5 && (nrt * 0.26) < 1625){
+        let aux = 2
+        if(portStay != 6 && portStay != 13 && portStay != 20){
+            portDues = (1625 * (portStay - (aux * (Math.floor(portStay / 7))))) + (2000 * Math.floor(portStay / 7))
+        }
+        else if(portStay == 6){
+            portDues = (1625 * 5) + (2000 * 1)
+        }
+        else if(portStay == 13){
+            portDues = (1625 * 10) + (2000 * 3)
+        }
+        else if(portStay == 20){
+            portDues = (1625 * 15) + (2000 * 5)
+        }
+    }
+
+    if(uf < 65){
+        uf = 65;
     }
 
     if(!cabotajeIn.checked){
@@ -52,7 +84,6 @@ function generarPda(){
     let tarifa = uf * 14;
     portPilot = ((tarifa + 2200) * 2) + (tarifa * arrDraft) + (tarifa * depDraft);
 
-
     document.getElementById("PDA").innerHTML = `${vesselName.toUpperCase()} – ${muelle} – ${portStay} day${plural} along:<br/>
     ------------------------------------------<br/>
     -Port dues: &nbsp;&nbsp;&nbsp;&nbsp;usd ${Math.ceil(portDues).toLocaleString("en-US")}. (bss fm Mon-Fri at usd 0.26xNRTxday) (if she is along during Sat/Sun/Hol: usd 0.32xNRTxday)<br/>
@@ -65,5 +96,5 @@ function generarPda(){
     ${libreSigres}
     -Headclerk: &nbsp;&nbsp;&nbsp;&nbsp;usd ${(headClerk * portStay).toLocaleString("en-US")}.<br/>
     -Watchmen: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd ${(watchmen * portStay).toLocaleString("en-US")}.`
-
+    
 }

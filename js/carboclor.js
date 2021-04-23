@@ -16,7 +16,7 @@ function generarPda(){
     let watchmen = 880;
     let libreSigres = "";
     let migra = "";
-    let uf = (loa * beam * dm) / 800
+    let uf = Math.ceil((loa * beam * dm) / 800);
     let plural = "";
     document.getElementById("PDA").style = "background-color: white; box-shadow: 10px 10px 10px rgba(0,0,0,0.3)"
 

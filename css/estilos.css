@@ -39,7 +39,7 @@ body{
     background-color: rgb(255, 255, 255, 0.6);
 }
 #muellecont{
-    /*Contenedor (caja con transparencias) para todos los muelles (excepto San Pedro y Euroamérica/Maripasa)*/
+    /*Contenedor (caja con transparencias) para todos los muelles (excepto San Pedro, TDG y Euroamérica/Maripasa)*/
     box-shadow: 15px 15px 15px rgba(0,0,0,0.5);
     margin-top: 2.5%;
     padding-top: 1%;
@@ -47,8 +47,8 @@ body{
     border-radius: 15px;
     background-color: rgb(255, 255, 255, 0.6);
 }
-#eurocont{
-    /*Contenedor (caja con transparencias) únicamente para Euroamérica/Maripasa*/
+#eurotdgcont{
+    /*Contenedor (caja con transparencias) únicamente para Euroamérica/Maripasa/TDG*/
     box-shadow: 15px 15px 15px rgba(0,0,0,0.5);
     margin-top: 2.5%;
     padding-top: 1%;

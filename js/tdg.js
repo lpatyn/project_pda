@@ -16,8 +16,9 @@ function generarPda(){
     let watchmen = 880;
     let libreSigres = "";
     let migra = "";
-    let uf = (loa * beam * dm) / 800
+    let uf = Math.ceil((loa * beam * dm) / 800);
     let plural = "";
+    let vesselType = document.getElementById("vesselType").value;
     document.getElementById("PDA").style = "background-color: white; box-shadow: 10px 10px 10px rgba(0,0,0,0.3)"
 
     if(portStay != 1){
@@ -28,24 +29,36 @@ function generarPda(){
         uf = 65;
     }
 
-    if(loa > 225){
-        if((0.385 * nrt) > 4400){
-            portDues = 0.385 * nrt * portStay;
+    if(vesselType == "bulker"){
+        if(loa > 225){
+            if((0.385 * nrt) > 4400){
+                portDues = 0.385 * nrt * portStay;
+            }
+            else{
+                portDues = 4400 * portStay;
+            }
         }
         else{
+            if((0.325 * nrt) > 4100){
+                portDues = 0.325 * nrt * portStay;
+            }
+            else{
+                portDues = 4100 * portStay;
+            }
+        }
+    }
+    else if(vesselType == "tanker"){
+        if(loa < 150){
+            portDues = 3900 * portStay;
+        }
+        else if(loa >= 150 && loa < 175){
             portDues = 4400 * portStay;
         }
-    }
-    else{
-        if((0.325 * nrt) > 4100){
-            portDues = 0.325 * nrt * portStay;
-        }
-        else{
-            portDues = 4100 * portStay;
+        else if(loa >= 175){
+            portDues = 5400 * portStay;
         }
     }
-    
-    
+       
     if(!cabotajeIn.checked){
         libreSigres = `-Free Pratique: usd 490.<br/>
         -Garbage Insp: &nbsp;usd 290.<br/>`;
@@ -63,7 +76,6 @@ function generarPda(){
     
     let tarifa = uf * 14;
     portPilot = ((tarifa + 2500) * 2) + (tarifa * arrDraft) + (tarifa * depDraft);
-
 
     document.getElementById("PDA").innerHTML = `${vesselName.toUpperCase()} – TERMINAL DEL GUAZU – ${portStay} day${plural} along:<br/>
     ----------------------------------------------<br/>

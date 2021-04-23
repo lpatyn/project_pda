@@ -15,7 +15,7 @@ function generarPda(){
     let watchmen = 880;
     let libreSigres = "";
     let migra = "";
-    let uf = (loa * beam * dm) / 800
+    let uf = Math.ceil((loa * beam * dm) / 800);
     let plural = "";
     document.getElementById("PDA").style = "background-color: white; box-shadow: 10px 10px 10px rgba(0,0,0,0.3)"
 
@@ -57,5 +57,5 @@ function generarPda(){
     -Custom surveyor: usd 1,200.<br/>
     -Headclerk: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd ${(headClerk * portStay).toLocaleString("en-US")}.<br/>
     -Watchmen: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd ${(watchmen * portStay).toLocaleString("en-US")}.`
-
+    
 }

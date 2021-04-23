@@ -18,7 +18,7 @@ function generarPda(){
     let watchmen = 880;
     let libreSigres = "";
     let migra = "";
-    let uf = (loa * beam * dm) / 800;
+    let uf = Math.ceil((loa * beam * dm) / 800);
     let ft = 0;
     let plural = "";
     document.getElementById("PDAsp").style = "background-color: white; box-shadow: 10px 10px 10px rgba(0,0,0,0.3);"
@@ -56,8 +56,7 @@ function generarPda(){
     }
     else if(cabotajeIn.checked && !cabotajeOut.checked){
         migra = `-Migrations: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd 58. (Out at berth)<br/>`
-    }
-    
+    }    
 
     document.getElementById("PDAsp").innerHTML = `${vesselName.toUpperCase()} – SAN PEDRO – ${portStay} day${plural} along - ELEVATOR BERTH<br/>
     --------------------------------------------------<br/>
