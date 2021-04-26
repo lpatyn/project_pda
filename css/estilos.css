@@ -1,5 +1,5 @@
 body{
-    background-size:cover;
+    background-size: auto;
     background-image: url(./img/royalty-free-background-image-03.jpg);
     /*background-image: radial-gradient(rgb(4, 0, 255), rgb(47, 224, 255));*/
 }
@@ -41,29 +41,29 @@ body{
 #muellecont{
     /*Contenedor (caja con transparencias) para todos los muelles (excepto San Pedro, TDG y Euroamérica/Maripasa)*/
     box-shadow: 15px 15px 15px rgba(0,0,0,0.5);
-    margin-top: 2.5%;
-    padding-top: 1%;
-    padding-bottom: 38em;
+    margin-top: 2em;
+    padding-top: 0.5em;
     border-radius: 15px;
     background-color: rgb(255, 255, 255, 0.6);
+    overflow-y: auto;
 }
 #eurotdgcont{
     /*Contenedor (caja con transparencias) únicamente para Euroamérica/Maripasa/TDG*/
     box-shadow: 15px 15px 15px rgba(0,0,0,0.5);
-    margin-top: 2.5%;
-    padding-top: 1%;
-    padding-bottom:42em;
+    margin-top: 2em;
+    padding-top: 0.8em;
     border-radius: 15px;
     background-color: rgb(255, 255, 255, 0.6);
+    overflow-y: auto;
 }
 #spcont{
     /*Contenedor (caja con transparencias) únicamente para San Pedro*/
     box-shadow: 15px 15px 15px rgba(0,0,0,0.5);
-    margin-top: 2.1%;
-    padding-top: 1%;
-    padding-bottom: 45em /*56%*/;
+    margin-top: 1.8em;
+    padding-top: 0.4em;
     border-radius: 15px;
-    background-color: rgb(255, 255, 255, 0.6)
+    background-color: rgb(255, 255, 255, 0.6);
+    overflow-y: auto;
 }
 #title{
     font-family: 'Work Sans', sans-serif;
@@ -75,16 +75,18 @@ body{
     width:35%;
     float: left; 
     padding: 0 1% 0 7%; 
-    margin-left: 3%;
-    margin-right:3%;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 2em;
 }
 #formsp{
     /*Formulario de muelle San Pedro*/
     width:35%; 
     float: left; 
     padding: 0 1% 0 7%; 
-    margin-left: 3%;
-    margin-right:3%;    
+    margin-left: 0.5em;
+    margin-right: 1em;  
+    margin-bottom: 1.8em;  
 }
 footer{ 
     color:rgb(255, 255, 255, 0.75);
@@ -115,10 +117,10 @@ footer{
     opacity:0.70;
 }
 .flex-grid{
-    flex-flow: row wrap;
+    /*flex-flow: row wrap;*/
     display: inline-block;
-    justify-content: space-around;
+    /*justify-content: space-around;
     align-items: flex-start;
-    align-content: space-around;
+    align-content: space-around;*/
 }
 
