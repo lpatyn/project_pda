@@ -52,13 +52,13 @@ function generarPda(){
     }
 
     if(!cabotajeIn.checked && !cabotajeOut.checked){
-        migra = `-Migrations: &nbsp;&nbsp;&nbsp;usd 116. (In/out)<br/>`
+        migra = `-Migrations: &nbsp;&nbsp;&nbsp;usd 2,000. (In/out)<br/>`
     }
     else if(!cabotajeIn.checked && cabotajeOut.checked){
-        migra = `-Migrations: &nbsp;&nbsp;&nbsp;usd 58. (In)<br/>`
+        migra = `-Migrations: &nbsp;&nbsp;&nbsp;usd 1,000. (In)<br/>`
     }
     else if(cabotajeIn.checked && !cabotajeOut.checked){
-        migra = `-Migrations: &nbsp;&nbsp;&nbsp;usd 58. (Out)<br/>`
+        migra = `-Migrations: &nbsp;&nbsp;&nbsp;usd 1,000. (Out)<br/>`
     }
     
     let tarifa = uf * 14;
