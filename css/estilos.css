@@ -22,6 +22,8 @@ body{
     margin: 4% 1% 4% 0;
     padding: 1% 2% 1%;
     border-radius: 15px;
+    overflow-wrap: anywhere;
+    transition: background-color 0.15s, box-shadow 0.15s;
 }
 #PDAsp{
     /*Contenedor de las proformas generadas (únicamente para San Pedro)*/
@@ -32,6 +34,8 @@ body{
     margin: 4% 2% 5% 0;
     padding: 1% 3% 1%;
     border-radius: 15px;
+    overflow-wrap: anywhere;
+    transition: background-color 0.15s, box-shadow 0.15s;
 }
 #indexcont{
     /*Contenedor (caja con transparencias) para index*/
@@ -40,7 +44,7 @@ body{
     padding-bottom: 1%;
     padding-top: 1%;
     border-radius: 15px;
-    background-color: rgb(255, 255, 255, 0.6);
+    background-color: rgb(255, 255, 255, 0.5);
 }
 #muellecont{
     /*Contenedor (caja con transparencias) para todos los muelles (excepto San Pedro, TDG y Euroamérica/Maripasa)*/
@@ -48,7 +52,7 @@ body{
     margin-top: 2em;
     padding-top: 0.5em;
     border-radius: 15px;
-    background-color: rgb(255, 255, 255, 0.6);
+    background-color: rgb(255, 255, 255, 0.5);
     overflow-y: auto;
 }
 #eurotdgcont{
@@ -57,7 +61,7 @@ body{
     margin-top: 2em;
     padding-top: 0.8em;
     border-radius: 15px;
-    background-color: rgb(255, 255, 255, 0.6);
+    background-color: rgb(255, 255, 255, 0.5);
     overflow-y: auto;
 }
 #spcont{
@@ -66,7 +70,7 @@ body{
     margin-top: 1.8em;
     padding-top: 0.4em;
     border-radius: 15px;
-    background-color: rgb(255, 255, 255, 0.6);
+    background-color: rgb(255, 255, 255, 0.5);
     overflow-y: auto;
 }
 #title{
@@ -116,6 +120,7 @@ footer{
     border-radius: 15px;
     float: left;
     margin: 0.2% 2% 3% 5%;
+    transition: opacity 0.2s, box-shadow 0.2s;
 }
 .foto:hover{
     opacity:0.80;
