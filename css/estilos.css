@@ -1,5 +1,9 @@
+html{
+    height: auto;
+    min-height: 100%;
+}
 body{
-    background-size: auto;
+    background-size: cover;
     background-image: url(./img/royalty-free-background-image-03.jpg);
     /*background-image: radial-gradient(rgb(4, 0, 255), rgb(47, 224, 255));*/
 }
@@ -114,7 +118,8 @@ footer{
     margin: 0.2% 2% 3% 5%;
 }
 .foto:hover{
-    opacity:0.70;
+    opacity:0.80;
+    box-shadow: 6px 6px 12px black;
 }
 .flex-grid{
     /*flex-flow: row wrap;*/
