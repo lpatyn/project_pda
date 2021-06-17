@@ -120,11 +120,12 @@ footer{
     border-radius: 15px;
     float: left;
     margin: 0.2% 2% 3% 5%;
-    transition: opacity 0.2s, box-shadow 0.2s;
+    transition: opacity 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 .foto:hover{
     opacity:0.80;
     box-shadow: 6px 6px 12px black;
+    transform: scale(1.06);
 }
 .flex-grid{
     /*flex-flow: row wrap;*/
