@@ -54,6 +54,7 @@ body{
     border-radius: 15px;
     background-color: rgb(255, 255, 255, 0.5);
     overflow-y: auto;
+    overflow-x: clip;
 }
 #eurotdgcont{
     /*Contenedor (caja con transparencias) únicamente para Euroamérica/Maripasa/TDG*/
@@ -63,6 +64,7 @@ body{
     border-radius: 15px;
     background-color: rgb(255, 255, 255, 0.5);
     overflow-y: auto;
+    overflow-x: clip;
 }
 #spcont{
     /*Contenedor (caja con transparencias) únicamente para San Pedro*/
@@ -72,6 +74,7 @@ body{
     border-radius: 15px;
     background-color: rgb(255, 255, 255, 0.5);
     overflow-y: auto;
+    overflow-x: clip;
 }
 #title{
     font-family: 'Work Sans', sans-serif;
