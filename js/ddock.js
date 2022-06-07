@@ -30,19 +30,19 @@ function generarPda(){
     }
 
     if(loa > 225){
-        if((0.40 * nrt) > 4400){
-            portDues = 0.40 * nrt * portStay;
+        if((0.45 * nrt) > 5200){
+            portDues = 0.45 * nrt * portStay;
         }
         else{
-            portDues = 4400 * portStay;
+            portDues = 5200 * portStay;
         }
     }
     else{
-        if((0.37 * nrt) > 4200){
-            portDues = 0.37 * nrt * portStay;
+        if((0.43 * nrt) > 4800){
+            portDues = 0.43 * nrt * portStay;
         }
         else{
-            portDues = 4200 * portStay;
+            portDues = 4800 * portStay;
         }
     }
     
@@ -62,7 +62,7 @@ function generarPda(){
     }
     
     let tarifa = uf * 14;
-    portPilot = ((tarifa + 2845) * 2) + (tarifa * arrDraft) + (tarifa * depDraft);
+    portPilot = ((tarifa + 3055) * 2) + (tarifa * arrDraft) + (tarifa * depDraft);
 
     document.getElementById("PDA").innerHTML = `${vesselName.toUpperCase()} – DELTA DOCK – ${portStay} day${plural} along:<br/>
     --------------------------------------<br/>
