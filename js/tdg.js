@@ -31,31 +31,31 @@ function generarPda(){
 
     if(vesselType == "bulker"){
         if(loa > 225){
-            if((0.385 * nrt) > 4400){
-                portDues = 0.385 * nrt * portStay;
+            if((0.45 * nrt) > 5200){
+                portDues = 0.45 * nrt * portStay;
             }
             else{
-                portDues = 4400 * portStay;
+                portDues = 5200 * portStay;
             }
         }
         else{
-            if((0.325 * nrt) > 4100){
-                portDues = 0.325 * nrt * portStay;
+            if((0.43 * nrt) > 4800){
+                portDues = 0.43 * nrt * portStay;
             }
             else{
-                portDues = 4100 * portStay;
+                portDues = 4800 * portStay;
             }
         }
     }
     else if(vesselType == "tanker"){
         if(loa < 150){
-            portDues = 3900 * portStay;
+            portDues = 4200 * portStay;
         }
         else if(loa >= 150 && loa < 175){
-            portDues = 4400 * portStay;
+            portDues = 4800 * portStay;
         }
         else if(loa >= 175){
-            portDues = 5400 * portStay;
+            portDues = 5800 * portStay;
         }
     }
        
@@ -75,7 +75,7 @@ function generarPda(){
     }
     
     let tarifa = uf * 14;
-    portPilot = ((tarifa + 2500) * 2) + (tarifa * arrDraft) + (tarifa * depDraft);
+    portPilot = ((tarifa + 2620) * 2) + (tarifa * arrDraft) + (tarifa * depDraft);
 
     document.getElementById("PDA").innerHTML = `${vesselName.toUpperCase()} – TERMINAL DEL GUAZU – ${portStay} day${plural} along:<br/>
     ----------------------------------------------<br/>
