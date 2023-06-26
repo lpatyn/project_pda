@@ -88,6 +88,6 @@ function generarPda(){
     ${libreSigres}
     -Headclerk: &nbsp;&nbsp;&nbsp;&nbsp;usd ${(headClerk * portStay).toLocaleString("en-US")}.<br/>
     -Watchmen: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd ${(watchmen * portStay).toLocaleString("en-US")}.<br/>
-    -Tugboat: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd 16,500. (Compulsory only for departure of vessels exceeding 120 m LOA)`
+    -Tugboat: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd 21,000. (Compulsory only for departure of vessels exceeding 120 m LOA)`
 
 }
