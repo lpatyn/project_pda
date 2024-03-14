@@ -82,7 +82,7 @@ function generarPda(){
     -Port dues: &nbsp;&nbsp;&nbsp;&nbsp;usd ${Math.ceil(portDues).toLocaleString("en-US")}.<br/>
     -ISPS Charge: &nbsp;&nbsp;usd ${Math.ceil(ispsCharge).toLocaleString("en-US")}.<br/>
     -Port Pilot: &nbsp;&nbsp;&nbsp;usd ${Math.ceil(portPilot).toLocaleString("en-US")}.<br/>
-    -Mooring/Unm: &nbsp;&nbsp;usd 3,400. (NWH)<br/>
+    -Mooring/Unm: &nbsp;&nbsp;usd 4,200. (NWH)<br/>
     -Custom House: &nbsp;usd 600. (Inward)<br/>
     ${migra}
     ${libreSigres}
