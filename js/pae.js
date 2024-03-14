@@ -50,7 +50,7 @@ function generarPda(){
     -Port dues: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N/A<br/>
     -Light dues: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd ${Math.ceil(lightDues).toLocaleString("en-US")}.<br/>
     -Port Pilot: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd ${Math.ceil(portPilot).toLocaleString("en-US")}.<br/>
-    -Mooring/Unm: &nbsp;&nbsp;&nbsp;&nbsp;usd 3,800. (in NWH) or usd 4,500 if O/T. (+ usd 500 additional boat for vessels exceeding 150 mtrs LOA)<br/>
+    -Mooring/Unm: &nbsp;&nbsp;&nbsp;&nbsp;usd 4,200. (in NWH) or usd 4,500 if O/T. (+ usd 500 additional boat for vessels exceeding 150 mtrs LOA)<br/>
     -Custom House: &nbsp;&nbsp;&nbsp;usd 600. (Inward)<br/>
     ${migra}
     ${libreSigres}
