@@ -21,6 +21,7 @@ function generarPda(){
     let uf = Math.ceil((loa * beam * dm) / 800);
     let ft = 0;
     let plural = "";
+    let freePratique = (((nrt-1001)*6.9429+416574)/840)+50;
     document.getElementById("PDAsp").style = "background-color: white; box-shadow: 10px 10px 10px rgba(0,0,0,0.3);"
 
     if(portStay != 1){
@@ -44,7 +45,7 @@ function generarPda(){
     portPilot = ((tarifa + 1350) * 2) + (tarifa * arrDraft) + (tarifa * depDraft);
     
     if(!cabotajeIn.checked){
-        libreSigres = `-Free Pratique: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd 490.<br/>
+        libreSigres = `-Free Pratique: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd ${Math.ceil(freePratique).toLocaleString("en-US")}.<br/>
         -Garbage Insp: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd 290.<br/>`;
     }
 
