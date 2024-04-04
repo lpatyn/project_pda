@@ -74,6 +74,6 @@ function generarPda(){
     -Watchmen: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd ${(watchmen * portStay).toLocaleString("en-US")}.<br/><br/>
     Tener en cuenta habilitación de aduana por permanencia en caso que el buque no opere en OT: usd 300-350/turno.<br/>
     (*) Port safety dues will be increased depending on total vessel´s stay.<br/>
-    (**) Recordar que los prácticos recomiendan no superar los 180 mtrs LOA`
+    (**) Recordar que los prácticos recomiendan no superar los 200 mtrs LOA`
 
 }
