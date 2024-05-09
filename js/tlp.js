@@ -31,7 +31,7 @@ function generarPda(){
     }
 
     if((0.30 * nrt) > 2000){
-        portDues = 0.30 * nrt * portStay;
+        portDues = 0.37 * nrt * portStay;
     }
     else{
         portDues = 2000 * portStay;
