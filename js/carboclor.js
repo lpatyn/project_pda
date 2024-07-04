@@ -9,8 +9,8 @@ function generarPda(){
     let depDraft = parseFloat(document.getElementById("depDraft").value);
     let cabotajeIn = document.getElementById("cabotajeIn");
     let cabotajeOut = document.getElementById("cabotajeOut");
-    let portDues = 8800 * portStay;
-    let lightDues = nrt * 0.073;
+    let portDues = 10560 * portStay;
+    let lightDues = nrt * 0.05801;
     let portPilot = 0;
     let tallyClerk = 800;
     let watchmen = 880;
@@ -50,8 +50,8 @@ function generarPda(){
 
     document.getElementById("PDA").innerHTML = `${vesselName.toUpperCase()} – CARBOCLOR – ${portStay} day${plural} along:<br/>
     ----------------------------------------<br/>
-    -Port dues: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd ${Math.ceil(portDues).toLocaleString("en-US")} (usd 8,800 first 24 hrs + usd 320 per additional hour)<br/>
-    (Sat/Sun/Holiday usd 13,300 24 hrs + usd 650 additional hour)<br/>
+    -Port dues: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd ${Math.ceil(portDues).toLocaleString("en-US")} (usd 10,560 first 24 hrs + usd 372 per additional hour)<br/>
+    (Sat/Sun/Holiday usd 14,630 24 hrs + usd 715 additional hour)<br/>
     -Mooring/Unmooring: &nbsp;&nbsp;&nbsp;&nbsp;included in port dues.<br/>
     -Oil Spill Prevention: &nbsp;included in port dues.<br/>
     -Light dues: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd ${Math.ceil(lightDues).toLocaleString("en-US")}.<br/>
