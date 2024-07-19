@@ -42,7 +42,7 @@ function generarPda(){
     let lightDues = grt * 0.25 * 1.10 * ft;
 
     let tarifa = uf * 14;
-    portPilot = ((tarifa + 1350) * 2) + (tarifa * arrDraft) + (tarifa * depDraft);
+    portPilot = ((tarifa + 2900) * 2) + (tarifa * arrDraft) + (tarifa * depDraft);
     
     if(!cabotajeIn.checked){
         libreSigres = `-Free Pratique: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd ${Math.ceil(freePratique).toLocaleString("en-US")}.<br/>
