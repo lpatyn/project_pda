@@ -9,7 +9,7 @@ function generarPda(){
     let depDraft = parseFloat(document.getElementById("depDraft").value);
     let cabotajeIn = document.getElementById("cabotajeIn");
     let cabotajeOut = document.getElementById("cabotajeOut");
-    let portDues = 10560 * portStay;
+    let portDues = 12800 * portStay;
     let lightDues = nrt * 0.05801;
     let portPilot = 0;
     let tallyClerk = 800;
@@ -51,7 +51,7 @@ function generarPda(){
     document.getElementById("PDA").innerHTML = `${vesselName.toUpperCase()} – CARBOCLOR – ${portStay} day${plural} along:<br/>
     ----------------------------------------<br/>
     -Port dues: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd ${Math.ceil(portDues).toLocaleString("en-US")} (usd 10,560 first 24 hrs + usd 372 per additional hour)<br/>
-    (Sat/Sun/Holiday usd 14,630 24 hrs + usd 715 additional hour)<br/>
+    (Sat/Sun/Holiday usd 16,900 24 hrs + usd 780 additional hour)<br/>
     -Mooring/Unmooring: &nbsp;&nbsp;&nbsp;&nbsp;included in port dues.<br/>
     -Oil Spill Prevention: &nbsp;included in port dues.<br/>
     -Light dues: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd ${Math.ceil(lightDues).toLocaleString("en-US")}.<br/>
