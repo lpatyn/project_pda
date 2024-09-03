@@ -10,7 +10,7 @@ function generarPda(){
     let cabotajeIn = document.getElementById("cabotajeIn");
     let cabotajeOut = document.getElementById("cabotajeOut");
     let portDues = 0.26 * nrt * portStay;
-    let lightDues = nrt * 0.05801;
+    let lightDues = nrt * 0.029;
     let ispsCharge = 950;
     let portPilot = 0;
     let headClerk = 1100;
