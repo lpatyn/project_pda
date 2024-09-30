@@ -50,7 +50,7 @@ function generarPda(){
 
     document.getElementById("PDA").innerHTML = `${vesselName.toUpperCase()} – CARBOCLOR – ${portStay} day${plural} along:<br/>
     ----------------------------------------<br/>
-    -Port dues: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd ${Math.ceil(portDues).toLocaleString("en-US")} (usd 10,560 first 24 hrs + usd 372 per additional hour)<br/>
+    -Port dues: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd ${Math.ceil(portDues).toLocaleString("en-US")} (usd 12,800 first 24 hrs + usd 480 per additional hour)<br/>
     (Sat/Sun/Holiday usd 16,900 24 hrs + usd 780 additional hour)<br/>
     -Mooring/Unmooring: &nbsp;&nbsp;&nbsp;&nbsp;included in port dues.<br/>
     -Oil Spill Prevention: &nbsp;included in port dues.<br/>
