@@ -50,13 +50,13 @@ function generarPda(){
     }
 
     if(!cabotajeIn.checked && !cabotajeOut.checked){
-        migra = `-Migrations: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd 2,000. (In/out at berth)<br/>`
+        migra = `-Migrations: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd 2,500. (In/out at berth)<br/>`
     }
     else if(!cabotajeIn.checked && cabotajeOut.checked){
-        migra = `-Migrations: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd 1,000. (In at berth)<br/>`
+        migra = `-Migrations: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd 1,250. (In at berth)<br/>`
     }
     else if(cabotajeIn.checked && !cabotajeOut.checked){
-        migra = `-Migrations: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd 1,000. (Out at berth)<br/>`
+        migra = `-Migrations: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd 1,250. (Out at berth)<br/>`
     }    
 
     document.getElementById("PDAsp").innerHTML = `${vesselName.toUpperCase()} – SAN PEDRO – ${portStay} day${plural} along - ELEVATOR BERTH<br/>
