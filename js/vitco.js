@@ -39,13 +39,13 @@ function generarPda(){
     }
 
     if(!cabotajeIn.checked && !cabotajeOut.checked){
-        migra = `-Migrations: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd 2,000. (In/out)<br/>`
+        migra = `-Migrations: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd 2,500. (In/out)<br/>`
     }
     else if(!cabotajeIn.checked && cabotajeOut.checked){
-        migra = `-Migrations: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd 1,000. (In)<br/>`
+        migra = `-Migrations: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd 1,250. (In)<br/>`
     }
     else if(cabotajeIn.checked && !cabotajeOut.checked){
-        migra = `-Migrations: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd 1,000. (Out)<br/>`
+        migra = `-Migrations: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd 1,250. (Out)<br/>`
     }
     
     let tarifa = uf * 14;
