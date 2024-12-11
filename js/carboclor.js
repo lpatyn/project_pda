@@ -13,7 +13,7 @@ function generarPda(){
     let lightDues = nrt * 0.058;
     let portPilot = 0;
     let tallyClerk = 800;
-    let watchmen = 880;
+    let watchmen = 1850;
     let libreSigres = "";
     let migra = "";
     let uf = Math.ceil((loa * beam * dm) / 800);
