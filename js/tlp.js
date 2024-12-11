@@ -14,7 +14,7 @@ function generarPda(){
     let ispsCharge = 500;
     let portPilot = 0;
     let headClerk = 1100;
-    let watchmen = 880;
+    let watchmen = 1555;
     let libreSigres = "";
     let migra = "";
     let uf = Math.ceil((loa * beam * dm) / 800);
