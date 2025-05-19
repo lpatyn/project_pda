@@ -26,7 +26,7 @@ function generarPda(){
     }
 
     if(portStay > 1){
-        portDues += (4600 * (portStay - 1))
+        portDues += (5000 * (portStay - 1))
     }
 
     if(uf < 65){
