@@ -12,7 +12,7 @@ function generarPda(){
     let cabotajeIn = document.getElementById("cabotajeIn");
     let cabotajeOut = document.getElementById("cabotajeOut");
     let portDues = 0.4 * nrt * portStay;
-    let ispsCharge = (((6 * portStay) * 3 * 34364.41) + nrt * 1.8) / usd;
+    let ispsCharge = (((6 * portStay) * 3 * 40889.91) + nrt * 1.8) / usd;
     let portPilot = 0;
     let headClerk = 1100;
     let watchmen = 1555;
