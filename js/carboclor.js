@@ -60,7 +60,7 @@ function generarPda(){
     ${migra}
     ${libreSigres}
     -Tallyclerk: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd ${(tallyClerk * portStay).toLocaleString("en-US")}.<br/>
-    -Watchmen: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd ${(watchmen * portStay).toLocaleString("en-US")} (Optional).<br/>
-    -Custom house overtime: usd 800`
+    -Watchmen: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd ${(watchmen * portStay).toLocaleString("en-US")}. (Optional)<br/>
+    -Custom house overtime: usd 800.`
 
 }
