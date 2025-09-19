@@ -39,7 +39,7 @@ function generarPda(){
         
     if(!cabotajeIn.checked){
         libreSigres = `-Free Pratique: usd ${Math.ceil(freePratique).toLocaleString("en-US")}.<br/>
-        -Garbage Insp: &nbsp;usd 290.<br/>`;
+        -Garbage Insp: &nbsp;usd 40.<br/>`;
     }
 
     if(!cabotajeIn.checked && !cabotajeOut.checked){
