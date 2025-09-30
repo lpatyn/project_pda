@@ -76,7 +76,7 @@ function generarPda(){
     }
     
     let tarifa = uf * 14;
-    portPilot = ((tarifa + 2620) * 2) + (tarifa * arrDraft) + (tarifa * depDraft);
+    portPilot = ((tarifa + 3020) * 2) + (tarifa * arrDraft) + (tarifa * depDraft);
 
     document.getElementById("PDA").innerHTML = `${vesselName.toUpperCase()} – TERMINAL DEL GUAZU – ${portStay} day${plural} along:<br/>
     ----------------------------------------------<br/>
