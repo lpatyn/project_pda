@@ -54,7 +54,7 @@ function generarPda(){
     document.getElementById("PDA").innerHTML = `${vesselName.toUpperCase()} – VITCO – ${portStay} day${plural} along:<br/>
     -----------------------------------<br/>
     -Port dues: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd ${Math.ceil(portDues).toLocaleString("en-US")}<br/>
-    (usd 8,900 first day + usd 2,300 per each additional 12 hours / add 20% if vessel has steel wires).<br/>
+    (usd 10,680 first day + usd 2,760 per each additional 12 hours / add 20% if vessel has steel wires).<br/>
     -Mooring/Unmooring: &nbsp;&nbsp;&nbsp;&nbsp;included in port dues.<br/>
     -Oil Spill Prevention: &nbsp;included in port dues.<br/>
     -Light dues: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd ${Math.ceil(lightDues).toLocaleString("en-US")}.<br/>
