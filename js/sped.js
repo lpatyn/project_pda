@@ -41,7 +41,7 @@ function generarPda(){
 
     let lightDues = grt * 0.25 * 1.10 * ft;
 
-    let tarifa = uf * 14;
+    let tarifa = uf * 11.2;
     portPilot = ((tarifa + 2900) * 2) + (tarifa * arrDraft) + (tarifa * depDraft);
     
     if(!cabotajeIn.checked){
