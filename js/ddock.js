@@ -62,7 +62,7 @@ function generarPda(){
         migra = `-Migrations: &nbsp;&nbsp;&nbsp;usd 1,250. (Out)<br/>`
     }
     
-    let tarifa = uf * 14;
+    let tarifa = uf * 11.2;
     portPilot = ((tarifa + 3550.25) * 2) + (tarifa * arrDraft) + (tarifa * depDraft);
 
     document.getElementById("PDA").innerHTML = `${vesselName.toUpperCase()} – DELTA DOCK – ${portStay} day${plural} along:<br/>
