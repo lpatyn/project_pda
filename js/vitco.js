@@ -48,7 +48,7 @@ function generarPda(){
         migra = `-Migrations: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usd 1,250. (Out)<br/>`
     }
     
-    let tarifa = uf * 14;
+    let tarifa = uf * 11.2;
     portPilot = ((tarifa + 2770) * 2) + (tarifa * arrDraft) + (tarifa * depDraft);
 
     document.getElementById("PDA").innerHTML = `${vesselName.toUpperCase()} – VITCO – ${portStay} day${plural} along:<br/>
